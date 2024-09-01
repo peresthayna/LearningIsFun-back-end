@@ -1,11 +1,15 @@
 package br.edu.fema.LearningIsFun.usuario.dto;
 
 import br.edu.fema.LearningIsFun.usuario.Usuario;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class UsuarioConsulta {
     private Long id;
     private String nome;
@@ -19,7 +23,6 @@ public class UsuarioConsulta {
         this.nome = usuario.getNome();
         this.avatar = usuario.getAvatar();
         this.pontuacao = usuario.getPontuacao();
-        this.nivel = usuario.getNivel();
         this.nivel = usuario.getNivel();
         this.trofeu = usuario.getTrofeu();
     }
