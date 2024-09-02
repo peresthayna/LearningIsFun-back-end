@@ -19,6 +19,9 @@ public class UsuarioConsulta {
     private String trofeu;
 
     public UsuarioConsulta(Usuario usuario) {
+        if(usuario == null) {
+            return;
+        }
         this.id = usuario.getId();
         this.nome = usuario.getNome();
         this.avatar = usuario.getAvatar();
