@@ -23,7 +23,7 @@ public class UsuarioService {
     }
 
     public List<Usuario> getAllUsuariosOrderByNivel() {
-    	List<Usuario> usuarios = usuarioRepository.findAllByOrderByNivelDesc();
+    	List<Usuario> usuarios = usuarioRepository.findAllByOrderByNivelDescPontuacaoDesc();
         for(int i = 0; i < usuarios.size(); i++) {
         	if(i == 0) {
         		usuarios.get(i).setTrofeu("assets/main/trofeu ouro.png");

@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
     List<Usuario> findAllByOrderByDataCadastroDesc();
-    List<Usuario> findAllByOrderByNivelDesc();
+    List<Usuario> findAllByOrderByNivelDescPontuacaoDesc();
 }
