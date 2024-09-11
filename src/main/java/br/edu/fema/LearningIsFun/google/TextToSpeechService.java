@@ -21,8 +21,8 @@ public class TextToSpeechService {
 
     public ResponseEntity<Map> synthesizeSpeech(String text, String language) {
         String token = this.tokenGenerator.getCurrentToken();
-        String languageCode = "";
-        String languageName = "";
+        String languageCode;
+        String languageName;
         switch (language) {
             case "pt-br": {
                 languageCode = "pt-BR";
