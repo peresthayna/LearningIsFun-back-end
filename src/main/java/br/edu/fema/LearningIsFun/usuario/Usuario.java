@@ -52,8 +52,8 @@ public class Usuario {
         this.id = usuario.getId();
         this.nome = usuario.getNome();
         this.avatar = usuario.getAvatar();
-        this.pontuacao = 0;
-        this.nivel = 0;
+        this.pontuacao = 100;
+        this.nivel = 1;
         this.dataCadastro = LocalDateTime.now();
         this.trofeu = "";
     }
