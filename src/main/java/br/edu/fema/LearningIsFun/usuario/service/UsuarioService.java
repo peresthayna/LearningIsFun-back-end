@@ -56,7 +56,8 @@ public class UsuarioService {
         Optional<Usuario> usuario = usuarioRepository.findById(id);
         if(usuario.isPresent()) {
             usuarioRepository.delete(usuario.get());
+        } else {
+            throw new IllegalArgumentException("Usuario não encontrado");
         }
-        throw new IllegalArgumentException("Usuario não encontrado");
     }
 }
